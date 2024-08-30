@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#1A759F"
+            android:text="Sumador"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:textColor="#1A759F"
+            android:text="     Bienvenido a este sumador, por favor ingresa los numeros para realizar la suma."/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Primer número"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/edt_num1"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="20sp"
+                android:hint="0"
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#4A5759"
+            android:layout_marginEnd="15dp"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Segundo número"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/edt_num2"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="20dp"
+                android:hint="0"
+                android:inputType="number"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_sumar"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#34a0a4"
+                android:text="Sumar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_ir"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#34a0a4"
+                android:text="Ir a calcudora completa" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
