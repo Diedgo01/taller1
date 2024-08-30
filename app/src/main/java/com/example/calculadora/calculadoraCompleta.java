@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class calculadoraCompleta extends AppCompatActivity {
 
-    Button button_calcular;
+    Button btn_calcular;
     EditText num1, num2;
     Spinner operaciones;
     @Override
@@ -21,12 +21,12 @@ public class calculadoraCompleta extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_calculadora_completa);
 
-        button_calcular = findViewById(R.id.button_calculate);
+        btn_calcular = findViewById(R.id.btn_calcular);
         num1 = findViewById(R.id.num1);
         num2 = findViewById(R.id.num2);
-        operaciones = findViewById(R.id.spinnerOperations);
+        operaciones = findViewById(R.id.operaciones);
 
-        button_calcular.setOnClickListener(new View.OnClickListener() {
+        btn_calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String text1 = num1.getText().toString();
